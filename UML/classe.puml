@@ -1,0 +1,20 @@
+@startuml
+class Joueur{ 
+    + pseudo: string
+    + victoires: integer    
+    + enregistrer_victoire(): None
+    + to_dict(): string
+    + from_dict(): Joueur
+    }
+class Match{
+    + joueur1: Joueur
+    + joueur2: Joueur
+    + score1: integer
+    + score2: integer
+    + definir_scores(): None
+    + gagnant(): integer
+}
+
+
+
+@enduml
