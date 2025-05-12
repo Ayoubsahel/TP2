@@ -21,6 +21,10 @@ class Tournoi:
         Pour chaque ligne, créer un objet Joueur et l'ajouter à la liste des joueurs.
         Utiliser la fonction lire_csv() du fichier utils.py.
         """
+        liste = utils.lire_csv("/data/joueurs.csv")
+        for i in liste:
+            j = Joueur(i.keys())
+            self.joueurs.append(j)
         pass
 
     def charger_matchs(self, chemin_csv):
