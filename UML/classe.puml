@@ -18,14 +18,12 @@ class Tournoi{
     + nom: string 
     + joueurs: list
     + Match: list
-    + charger_joueurs: None
-    + charger_matchs: None
-    + saisir_scores: None
-    + afficher_classement:
-    + sauvegarder: 
-    + generer_rapport:
+    + charger_joueurs(): None
+    + charger_matchs(): None
+    + saisir_scores(): None
+    + afficher_classement():
+    + sauvegarder(): 
+    + generer_rapport():
 }
-
-
 
 @enduml
