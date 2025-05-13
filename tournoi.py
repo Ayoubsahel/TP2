@@ -110,4 +110,10 @@ class Tournoi:
         - Le classement final
         Utiliser la fonction ecrire_texte() du fichier utils.py.
         """
-        pass
+        liste = []
+        nom = f"nom: {self.nom}"
+        for i in self.matchs:
+            liste.append("match:"+{["joueur1:"+i.joueur1,"joueur2"+i.joueur2]: ["score1:"+str(i.score1),"score2:"+str(i.score2)] })
+        classement = f"classement \n{self.afficher_classement()}"
+        text = nom + liste + classement
+        utils.ecrire_texte(text, chemin_texte)
