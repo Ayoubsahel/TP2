@@ -1,0 +1,25 @@
+{
+    "nom": "Test",
+    "joueurs": [
+        {
+            "pseudo": "PlayerOne",
+            "victoires": 2
+        },
+        {
+            "pseudo": "PlayerFour",
+            "victoires": 2
+        },
+        {
+            "pseudo": "pseudo",
+            "victoires": 0
+        },
+        {
+            "pseudo": "PlayerTwo",
+            "victoires": 0
+        },
+        {
+            "pseudo": "PlayerThree",
+            "victoires": 0
+        }
+    ]
+}
