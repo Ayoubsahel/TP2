@@ -39,10 +39,11 @@ class Tournoi:
         jou = utils.lire_csv(chemin_csv)
         for i,j in jou.items():
             for k in self.joueurs:
-                if k.to_dict()[0] == i:
-                    if k.to_dict()[0] == j:
-                        mat = Match(i,j)
-                        self.matchs.append(mat)
+                if k.to_dict()["pseudo"] == i:
+                    for l in self.joueurs:
+                        if l.to_dict()["pseudo"] == j:
+                            mat = Match(i,j)
+                            self.matchs.append(mat)
                          
 
     def saisir_scores(self):
