@@ -25,5 +25,7 @@ class Tournoi{
     + sauvegarder(): 
     + generer_rapport():
 }
-
+Joueur "0..*" --* "1" Tournoi
+Match "0..*" --* "1" Tournoi
+Joueur "2" --* "1" Match
 @enduml
