@@ -31,6 +31,6 @@ def ecrire_texte(contenu, chemin):
     - contenu : texte à écrire
     - chemin : chemin du fichier texte à créer
     """
-    with open(chemin,"a") as f:
+    with open(chemin,"w") as f:
         f.write(contenu)
     
