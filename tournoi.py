@@ -91,7 +91,15 @@ class Tournoi:
         - la liste des joueurs (convertis en dictionnaires à l'aide de la fonction to_dict déjà implémenté dans la classe Joueur)
         Utiliser la fonction sauvegarder_json() du fichier utils.py.
         """
-        pass
+        data = {}
+        li_joueur = []
+        data["nom"] = f"{self.nom}"
+        for i in self.joueurs:
+            li_joueur.append(i.to_dict())
+        
+        data["joueurs"] = li_joueur
+        utils.sauvegarder_json(data,chemin_json)
+
 
     def generer_rapport(self, chemin_texte):
         """
